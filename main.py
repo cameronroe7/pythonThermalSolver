@@ -1,17 +1,9 @@
 # -*- coding: utf-8 -*-
+from grid import Grid, MeshSizes
+from DesignSet import designSet
 
-from scipy.io import loadmat
-from enum import Enum
+def main():
+    pass
 
-grids = loadmat("grids.mat",struct_as_record=True,squeeze_me=False)
-
-coarse = grids["coarse"]
-
-nodes = coarse["nodes"].item()
-coor = coarse["coor"]
-theta = coarse["theta"]
-
-class MeshDefinitions(Enum):
-    COARSE = "coarse"
-    MEDIUM = "medium"
-    FINE = "fine"
+if __name__ == "__main__":
+    main()
