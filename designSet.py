@@ -5,9 +5,5 @@ class DesignSet():
             self.mu = (.4, .6, .8, 1.2, .1)
         else:
             self.mu = mu
-    
-    def k(self):
-        return self.mu[:-1]
-            
-    def Bi(self):
-        return self.mu[-1]
+        self.k = [1, *self.mu]
+        self.Bi = self.mu[-1]
